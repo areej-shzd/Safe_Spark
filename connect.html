@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CONNECT - Safe Spark</title>
+    <link rel="stylesheet" href="connect_styles..css" type="text/css" />
+
+    <style>
+      /* --- PAGE BODY --- */
+      body {
+        background: #fff9ed;
+        margin: 0;
+        padding-bottom: 0px;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      .quote-container {
+        background: #94618e;
+        color: white;
+        padding: 1.5rem 2rem;
+        border-radius: 10px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        text-align: center;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        margin-bottom: 2rem;
+      }
+
+      .section-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .section-box {
+        position: relative;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 8px 15px rgb(0 0 0 / 0.1);
+        padding: 1.5rem 1.5rem 4rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        overflow: hidden;
+      }
+
+      .section-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 25px rgb(0 0 0 / 0.2);
+      }
+
+      .section-box:focus {
+        outline: 3px solid #b078f4;
+        outline-offset: 4px;
+      }
+
+      .section-img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1rem;
+        filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
+        transition: filter 0.3s ease;
+      }
+
+      .section-box:hover .section-img {
+        filter: drop-shadow(0 4px 6px rgba(38, 12, 66, 0.7));
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+
+      .section-short {
+        color: #444;
+        font-size: 1rem;
+      }
+
+      .hover-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #c486bd;
+        color: #222;
+        padding: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.3;
+        border-radius: 0 0 12px 12px;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+        pointer-events: none;
+      }
+
+      .section-box:hover .hover-text {
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
+      .section-num {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: #fff9ed;
+        color: black;
+        font-weight: 700;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        box-shadow: 0 2px 8px rgba(74, 24, 89, 0.5);
+      }
+
+      details {
+        margin-top: 2rem;
+        background: #e06f6f;
+        color: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        font-size: 1rem;
+      }
+
+      summary {
+        font-weight: 700;
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">
+        <a href="index.html"><h4>SAFE SPARK</h4></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="learn.html">LEARN</a></li>
+        <li><a href="act.html">ACT</a></li>
+        <li><a href="Train.html">TRAIN</a></li>
+        <li><a href="connect.html">CONNECT</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Quote -->
+      <div class="quote-container">
+        “We rise by lifting others. Connecting builds understanding, empathy,
+        and change.”
+      </div>
+
+      <!-- Section Grid -->
+      <div class="section-grid">
+        <div
+          class="section-box"
+          tabindex="0"
+          onclick="window.location='community.html'"
+        >
+          <div class="section-num">1</div>
+          <img
+            src="https://img.icons8.com/ios-filled/100/group-foreground-selected.png"
+            alt="Icon of people symbolizing joining an epilepsy community"
+            class="section-img"
+          />
+          <div class="section-title">Join a Community</div>
+          <div class="section-short">
+            Discover groups that raise awareness about epilepsy.
+          </div>
+          <div class="hover-text">
+            Find local or online communities where you can share stories, offer
+            support, and learn from others affected by epilepsy.
+          </div>
+        </div>
+
+        <div
+          class="section-box"
+          tabindex="0"
+          onclick="window.location='events.html'"
+        >
+          <div class="section-num">2</div>
+          <img
+            src="https://img.icons8.com/color/96/000000/conference.png"
+            alt="Conference icon for epilepsy awareness events"
+            class="section-img"
+          />
+          <div class="section-title">Attend Events</div>
+          <div class="section-short">
+            Participate in awareness events and support walks.
+          </div>
+          <div class="hover-text">
+            Many organizations host fun, meaningful events where you can meet
+            others and spread awareness in your community.
+          </div>
+        </div>
+
+        <div
+          class="section-box"
+          tabindex="0"
+          onclick="window.location='advocacy.html'"
+        >
+          <div class="section-num">3</div>
+          <img
+            src="https://img.icons8.com/color/96/megaphone.png"
+            alt="Megaphone symbolizing speaking out about epilepsy"
+            class="section-img"
+          />
+          <div class="section-title">Speak Out</div>
+          <div class="section-short">
+            Use your voice to break the stigma around epilepsy.
+          </div>
+          <div class="hover-text">
+            Share your story on social media, start a conversation at school, or
+            help spread verified resources to others.
+          </div>
+        </div>
+
+        <div
+          class="section-box"
+          tabindex="0"
+          onclick="window.location='volunteer.html'"
+        >
+          <div class="section-num">4</div>
+          <img
+            src="https://img.icons8.com/color/96/helping-hand.png"
+            alt="Helping hand icon for volunteering in epilepsy support"
+            class="section-img"
+          />
+          <div class="section-title">Volunteer</div>
+          <div class="section-short">
+            Support epilepsy charities through time or donations.
+          </div>
+          <div class="hover-text">
+            Whether it’s helping out at an event or fundraising, your
+            contributions can make a real difference.
+          </div>
+        </div>
+      </div>
+
+      <!-- Emergency Drop-down Section -->
+      <details>
+        <summary aria-label="Expand for emergency seizure response information">
+          🚨 In Case of Emergency
+        </summary>
+        <p>
+          Call emergency services immediately.<br />
+          In the U.S., dial <strong>911</strong>.<br />
+          In the UK, dial <strong>999</strong>.<br />
+          In Australia, dial <strong>000</strong>.<br />
+          Here are the emergency services for
+          <a
+            href="https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers"
+            >other countries</a
+          >
+          <br />
+          <br />
+          Stay with the person, time the seizure, and do not restrain them.<br />
+          <br />
+          <a
+            href="https://93w7nk.csb.app/learn.html"
+            style="
+              color: #fff9ed;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >Read more about seizure first aid</a
+          >
+        </p>
+      </details>
+    </main>
+
+    <div id="block2">
+      <div class="team-container"></div>
+    </div>
+    <!-- Sources Section -->
+    <div class="sources">
+      <div id="sourcetitle">
+        <h2>Sources & Further Reading</h2>
+      </div>
+      <div id="sourcelist">
+        <div class="source-card">
+          <h3>Medical Organizations</h3>
+          <ul>
+            <li>
+              <a href="https://www.epilepsy.com/" target="_blank"
+                >Epilepsy Foundation</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.who.int/news-room/fact-sheets/detail/epilepsy"
+                target="_blank"
+                >World Health Organization</a
+              >
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/epilepsy/index.html" target="_blank"
+                >CDC Epilepsy Program</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="source-card">
+          <h3>Research & Education</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.mayoclinic.org/diseases-conditions/epilepsy/symptoms-causes/syc-20350093"
+                target="_blank"
+                >Mayo Clinic</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://my.clevelandclinic.org/health/diseases/22789-seizure"
+                target="_blank"
+                >Cleveland Clinic</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.ninds.nih.gov/health-information/disorders/epilepsy-and-seizures"
+                target="_blank"
+                >National Institute of Neurological Disorders</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="source-card">
+          <h3>Support Communities</h3>
+          <ul>
+            <li>
+              <a href="https://www.epilepsy.org.uk/" target="_blank"
+                >Epilepsy Action (UK)</a
+              >
+            </li>
+            <li>
+              <a href="https://www.epilepsysociety.org.uk/" target="_blank"
+                >Epilepsy Society (UK)</a
+              >
+            </li>
+            <li>
+              <a href="https://www.epilepsy.ca/" target="_blank"
+                >Epilepsy Canada</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

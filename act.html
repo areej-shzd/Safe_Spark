@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First- Aid Protocols</title>
+    <link rel="stylesheet" href="act_styles..css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <!--navigation bar-->
+        <a href="index.html"> <h4>SAFE SPARK</h4></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="learn.html">LEARN</a></li>
+        <li><a href="act.html">ACT</a></li>
+        <li><a href="Train.html">TRAIN</a></li>
+        <li><a href="connect.html">CONNECT</a></li>
+      </ul>
+
+      <div class="something">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <div class="center">
+      <div id="block1">
+        <h1>
+          “KNOWING WHAT TO DO DURING A SEIZURE CAN SAVE A LIFE — STAY CALM, ACT SAFELY, AND BE PREPARED"
+        </h1>
+      </div>
+
+    <div class="container">
+      <h1>Find some first aid seizure protocols you need to know!</h1>
+           <!-- Page quote -->
+           <div class="quote-container">
+            Hover over the boxes to view the different protocols and steps you can take when a person is experiencing a siezure!
+          </div>
+    
+
+      <div class="grid-container">
+        <!-- Row 1 -->
+        <div class="box">
+          <div class="box-image">
+            <!-- REPLACE THIS WITH YOUR IMAGE -->
+            <img
+              src="https://i.pinimg.com/736x/98/34/e9/9834e9ca30d9945ad7a82b43f68d55a5.jpg"
+              alt="Be Calm"
+            />
+          </div>
+          <div class="box-content">
+            <h3>Be Calm</h3>
+            <p>Don’t panic; most seizures are not emergencies</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-image">
+            <!-- REPLACE THIS WITH YOUR IMAGE -->
+            <img
+              src="https://i.pinimg.com/736x/b5/2a/19/b52a19a9791d32e0ec7724b59211c129.jpg"
+              alt="Time"
+            />
+          </div>
+          <div class="box-content">
+            <h3>Time the Seizure</h3>
+            <p>If it lasts more than 5 minutes, call emergency services</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-image">
+            <!-- REPLACE THIS WITH YOUR IMAGE -->
+            <img
+              src="https://i.pinimg.com/736x/b2/05/23/b2052333f515539b8a67c178ab39d53b.jpg"
+              alt="Protect from Injury"
+            />
+          </div>
+          <div class="box-content">
+            <h3>Protect from Injury</h3>
+            <p>Clear the area, cushion the head, and loosen tight clothing</p>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="box">
+          <div class="box-image">
+            <!-- REPLACE THIS WITH YOUR IMAGE -->
+            <img
+              src="https://i.pinimg.com/736x/b0/6f/c3/b06fc397a312a991e7c7a09b4420586a.jpg"
+              alt="Turn on Their Side"
+            />
+          </div>
+          <div class="box-content">
+            <h3>Turn the Person on Their Side</h3>
+            <p>Helps keep the airway clear and prevents choking</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-image">
+            <!-- REPLACE THIS WITH YOUR IMAGE -->
+            <img
+              src="https://i.pinimg.com/736x/58/8f/c3/588fc319d8bf6fbe2fafcfb01e47ad42.jpg"
+              alt="Bopomofo"
+            />
+          </div>
+          <div class="box-content">
+            <h3>Don't restrain and restrict</h3>
+            <p>
+              Never restrain or Put Anything in Their Mouth – This can cause
+              injury.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-image">
+            <!-- REPLACE THIS WITH YOUR IMAGE -->
+            <img
+              src="https://i.pinimg.com/736x/d5/fa/71/d5fa714b6a05d47a3e88abc0c0769bab.jpg"
+              alt="Boba"
+            />
+          </div>
+          <div class="box-content">
+            <h3>Stay Until it's Over</h3>
+            <p>
+              Offer reassurance and stay with the person until they're fully
+              awake.
+            </p>
+          </div>
+        </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              const boxes = document.querySelectorAll('.box');
+              
+              function checkScroll() {
+                  boxes.forEach((box, index) => {
+                      // Trigger point (when box enters viewport)
+                      const boxTop = box.getBoundingClientRect().top;
+                      const triggerPoint = window.innerHeight * 0.8;
+                      
+                      if (boxTop < triggerPoint) {
+                          // Staggered delay (one after another)
+                          setTimeout(() => {
+                              box.classList.add('visible');
+                          }, index * 150); // 150ms delay between boxes
+                      }
+                  });
+              }
+              
+              // Run on load and scroll
+              window.addEventListener('load', checkScroll);
+              window.addEventListener('scroll', checkScroll);
+              
+              // Trigger once on page load
+              checkScroll();
+          });
+          </script>
+
+</div>
+</div>
+
+<div id="block2">
+  <div class="team-container">
+  </div>
+
+
+
+  <!-- Sources Section -->
+  <div class="sources fade-in-section">
+    <div id="sourcetitle">
+      <h2>Sources & Further Reading</h2>
+    </div>
+    <div id="sourcelist">
+      <div class="source-card">
+        <h3>Medical Organizations</h3>
+        <ul>
+          <li>
+            <a href="https://www.epilepsy.com/" target="_blank"
+              >Epilepsy Foundation</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.who.int/news-room/fact-sheets/detail/epilepsy"
+              target="_blank"
+              >World Health Organization</a
+            >
+          </li>
+          <li>
+            <a href="https://www.cdc.gov/epilepsy/index.html" target="_blank"
+              >CDC Epilepsy Program</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="source-card">
+        <h3>Research & Education</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.mayoclinic.org/diseases-conditions/epilepsy/symptoms-causes/syc-20350093"
+              target="_blank"
+              >Mayo Clinic</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://my.clevelandclinic.org/health/diseases/22789-seizure"
+              target="_blank"
+              >Cleveland Clinic</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.ninds.nih.gov/health-information/disorders/epilepsy-and-seizures"
+              target="_blank"
+              >National Institute of Neurological Disorders</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="source-card">
+        <h3>Support Communities</h3>
+        <ul>
+          <li>
+            <a href="https://www.epilepsy.org.uk/" target="_blank"
+              >Epilepsy Action (UK)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.epilepsysociety.org.uk/" target="_blank"
+              >Epilepsy Society (UK)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.epilepsy.ca/" target="_blank"
+              >Epilepsy Canada</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</script>
+  
+  </body>
+</html>

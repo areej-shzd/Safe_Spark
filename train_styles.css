@@ -1,0 +1,140 @@
+#block1 {
+  background-color: #fff9ed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #a4739e;
+  border-radius: 10px;
+  margin: 0px 0px;
+  font-size: 30px;
+  font-family: ;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 20px;
+  background-color: inherit;
+}
+
+.center {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff9ed;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.center h1 {
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+nav {
+  background-color: #ba8db5;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h4 {
+  margin: 0;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 115px;
+  margin: 0;
+  padding-right: 30px;
+  margin-left: auto;
+}
+
+.nav-links li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Main container style */
+.quiz-container {
+  background-color: #fff9ed;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+/* basic button styling */
+.btn {
+  background-color: #cc8fc5;
+  color: black;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+/* button hover over */
+.btn:hover {
+  background-color: #e8dbc1;
+}
+/* hidden hides the elements not being used */
+.hidden {
+  display: none;
+}
+/* Main quiz title */
+h1 {
+  color: #a4739e;
+  margin-bottom: 1rem;
+}
+/* Styling for question text */
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+/* Grid layout for answer buttons */
+.btn-grid {
+  display: grid;
+  gap: 1rem;
+}
+/* Container for score display */
+#score-container {
+  margin-top: 2rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff9ed;
+}
+
+.quiz-container {
+  background-color: #fff9ed;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}

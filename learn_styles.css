@@ -1,0 +1,361 @@
+/* Base Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff9ed;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #a4739e;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sticky-nav.scrolled {
+  padding: 10px 30px;
+  background-color: rgba(164, 115, 158, 0.95);
+}
+nav {
+  background-color: #ba8db5;
+
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h4 {
+  margin: 0;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 115px;
+  margin: 0;
+  padding-right: 30px;
+  margin-left: auto;
+}
+
+.nav-links li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+/* Parallax Hero */
+.parallax-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Quote Section */
+#block1 {
+  background-color: #fff9ed;
+  padding: 50px 30px;
+  color: #a4739e;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 800px;
+  font-size: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #a4739e;
+}
+
+#block1 h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#block1 h3 {
+  font-style: italic;
+  text-align: right;
+  font-weight: 400;
+}
+
+/* Info Boxes */
+.LearnInfoBox {
+  background-color: #fff9ed;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 800px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #e8dbc1;
+}
+
+.LearnInfoBox h1 {
+  background: linear-gradient(to right, #a4739e, #cc8fc5);
+  color: white;
+  margin: 0;
+  padding: 20px;
+  font-size: 1.4em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.LearnInfoBox h1:hover {
+  background: linear-gradient(to right, #8a5d85, #a4739e);
+}
+
+.toggle-icon {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.boxContent {
+  max-height: 0;
+  overflow: hidden;
+  background-color: white;
+  padding: 0 20px;
+  transition: max-height 0.6s ease, padding 0.4s ease;
+}
+
+.boxContent h4 {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  padding: 20px 0;
+}
+
+.boxContent ul {
+  padding-left: 20px;
+}
+
+.boxContent li {
+  margin-bottom: 10px;
+}
+
+/* Spotify Section */
+.spotify {
+  margin: 80px auto;
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  color: #4f2d61;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.section-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+/* Sources Section */
+.sources {
+  background-color: #4f2d61;
+  padding: 60px 20px;
+  color: white;
+}
+
+#sourcetitle {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#sourcetitle h2 {
+  font-size: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+#sourcetitle h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #a4739e;
+}
+
+#sourcelist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.source-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.source-card:hover {
+  transform: translateY(-5px);
+}
+
+.source-card h3 {
+  border-bottom: 2px solid #a4739e;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+.source-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.source-card li {
+  margin-bottom: 15px;
+}
+
+.source-card a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.source-card a::before {
+  content: "→";
+  margin-right: 10px;
+  color: #a4739e;
+}
+
+.source-card a:hover {
+  color: #e8dbc1;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  #block1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .LearnInfoBox h1 {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  #sourcelist {
+    flex-direction: column;
+  }
+
+  .source-card {
+    min-width: auto;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.block a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.block a:hover {
+  text-decoration: underline;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}

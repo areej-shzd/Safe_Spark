@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>repl.it</title>
+    <link rel="stylesheet" href="train_styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <!--navigation bar-->
+        <a href="index.html"> <h4>SAFE SPARK</h4></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="learn.html">LEARN</a></li>
+        <li><a href="act.html">ACT</a></li>
+        <li><a href="Train.html">TRAIN</a></li>
+        <li><a href="connect.html">CONNECT</a></li>
+      </ul>
+
+      <div class="something">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+        <div class="center">
+      <div id="block1">
+    <!-- main container for quiz -->
+    <div class="quiz-container">
+    <h1> Seizure Protocol Quiz</h1>
+    <!-- Quiz question and answers section -->
+    <div id="quiz">
+      <!-- Placeholder for the current question -->
+      <div id="question">Question text will appear here</div>
+    <!-- container for answer buttons -->
+    <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+    </div>
+  </div>
+    <!-- final score -->
+    <div id="score-container"class="hidden">
+        <h2>Your Score</h2>
+        <p id="final-score"></p>
+          <!-- Button to restart the quiz -->
+        <button id="restart-btn" class="btn">Restart Quiz</button>
+    </div>
+  </div>
+    <!-- link HTML to JS file -->
+    <script src="Train.js"></script>
+  </body>
+</html>

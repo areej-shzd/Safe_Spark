@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Learn About Epilepsy | Safe Spark</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="learn_styles.css" type="text/css" />
+    <style>
+      /* Animation for scroll-triggered elements */
+      .fade-in-section {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+
+      .fade-in-section.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Nav bar -->
+    <nav class="sticky-nav">
+      <div class="logo">
+        <a href="index.html"> <h4>SAFE SPARK</h4></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="learn.html">LEARN</a></li>
+        <li><a href="act.html">ACT</a></li>
+        <li><a href="Train.html">TRAIN</a></li>
+        <li><a href="connect.html">CONNECT</a></li>
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Parallax -->
+    <section class="parallax-hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Understanding Epilepsy</h1>
+        <p class="hero-subtitle">
+          Knowledge is power when it comes to seizure disorders
+        </p>
+      </div>
+    </section>
+
+    <!-- Intro section -->
+    <div class="center fade-in-section">
+      <div id="block1">
+        <h1>"IT'S NEVER TOO LATE TO START, IT'S ALWAYS TOO LATE TO WAIT"</h1>
+        <h3>Jeff Olson</h3>
+      </div>
+    </div>
+
+    <!-- Questions -->
+    <div class="questions">
+      <div class="LearnInfoBox fade-in-section">
+        <h1 onclick="toggleBox(this)">
+          What is epilepsy? <span class="toggle-icon">+</span>
+        </h1>
+        <div class="boxContent">
+          <h4>
+            Epilepsy, also known as 'seizure disorder' is a neurological
+            condition characterized by sudden, random electrical discharges in
+            the brain. This results in seizures, which are uncontrolled bursts
+            of electrical activities that change sensations, behaviors,
+            awareness and muscle movements. According to the World Health
+            Organisation, an estimated 5 million people are diagnosed with
+            epilepsy each year globally. This is a serious and lifelong
+            condition that, if not treated correctly, can lead to serious injury
+            or death.
+          </h4>
+        </div>
+      </div>
+
+      <div class="LearnInfoBox fade-in-section">
+        <h1 onclick="toggleBox(this)">
+          What are the common causes for seizures?
+          <span class="toggle-icon">+</span>
+        </h1>
+        <div class="boxContent">
+          <h4>
+            Seizure causes fall into two main categories depending on why they
+            happen: Provoked seizures (nonepileptic) seizures involve a trigger,
+            which could be a temporary condition or a certain circumstance.
+            Unprovoked seizures (epileptic) are seizures that happen
+            spontaneously (randomly). There are several possible causes for
+            seizures. These can vary from the following: Medications, genetic
+            factors, electrolyte abnormalities, sleep state, infections, brain
+            inflammation, or injury.
+          </h4>
+        </div>
+      </div>
+
+      <div class="LearnInfoBox fade-in-section">
+        <h1 onclick="toggleBox(this)">
+          What are common symptoms alongside seizures?
+          <span class="toggle-icon">+</span>
+        </h1>
+        <div class="boxContent">
+          <h4>
+            Some common symptoms that occur in parallel to seizures include:
+            <ul>
+              <li>Loss of consciousness</li>
+              <li>Temporary confusion</li>
+              <li>Jerking body movements</li>
+              <li>Stiffening of the body</li>
+              <li>Breathing problems or stopping breathing</li>
+              <li>Loss of bowel or bladder control</li>
+            </ul>
+          </h4>
+        </div>
+      </div>
+
+      <!-- New epilepsy information sections -->
+      <div class="LearnInfoBox fade-in-section">
+        <h1 onclick="toggleBox(this)">
+          Types of Epileptic Seizures <span class="toggle-icon">+</span>
+        </h1>
+        <div class="boxContent">
+          <h4>
+            Epileptic seizures are categorized into two main types:
+            <strong>Focal seizures</strong> (starting in one area of the brain)
+            and <strong>Generalized seizures</strong> (affecting both sides of
+            the brain).
+
+            <ul>
+              <li>
+                <strong>Focal aware seizures:</strong> Person remains conscious
+                but may experience unusual feelings or movements
+              </li>
+              <li>
+                <strong>Focal impaired awareness seizures:</strong>
+                Consciousness is affected, may include repetitive movements
+              </li>
+              <li>
+                <strong>Absence seizures:</strong> Brief lapses in
+                consciousness, often in children
+              </li>
+              <li>
+                <strong>Tonic-clonic seizures:</strong> Violent muscle
+                contractions and loss of consciousness
+              </li>
+              <li>
+                <strong>Myoclonic seizures:</strong> Sudden brief jerks of
+                muscles
+              </li>
+            </ul>
+          </h4>
+        </div>
+      </div>
+
+      <div class="LearnInfoBox fade-in-section">
+        <h1 onclick="toggleBox(this)">
+          Diagnosis and Treatment Options <span class="toggle-icon">+</span>
+        </h1>
+        <div class="boxContent">
+          <h4>
+            Diagnosing epilepsy typically involves:
+            <ul>
+              <li>Detailed medical history and symptom description</li>
+              <li>Electroencephalogram (EEG) to measure brain activity</li>
+              <li>
+                MRI or CT scans to identify structural brain abnormalities
+              </li>
+              <li>Blood tests to rule out other conditions</li>
+            </ul>
+
+            Treatment options include:
+            <ul>
+              <li>
+                Anti-seizure medications (about 70% of people respond well)
+              </li>
+              <li>
+                Ketogenic diet (high-fat, low-carb diet that helps control
+                seizures)
+              </li>
+              <li>
+                Vagus nerve stimulation (implanted device that sends electrical
+                impulses)
+              </li>
+              <li>
+                Responsive neurostimulation (implanted device that detects and
+                stops seizures)
+              </li>
+              <li>
+                Surgery to remove the seizure focus in medication-resistant
+                cases
+              </li>
+            </ul>
+          </h4>
+        </div>
+      </div>
+
+      <div class="LearnInfoBox fade-in-section">
+        <h1 onclick="toggleBox(this)">
+          First Aid for Seizures <span class="toggle-icon">+</span>
+        </h1>
+        <div class="boxContent">
+          <h4>
+            <strong>Do:</strong>
+            <ul>
+              <li>Stay calm and time the seizure</li>
+              <li>Clear the area of hard or sharp objects</li>
+              <li>Cushion the head with something soft</li>
+              <li>
+                Turn the person gently onto their side (recovery position)
+              </li>
+              <li>Stay with them until fully recovered</li>
+            </ul>
+
+            <strong>Don't:</strong>
+            <ul>
+              <li>Restrain the person or try to stop movements</li>
+              <li>Put anything in their mouth</li>
+              <li>Offer food/water until fully alert</li>
+              <li>
+                Perform CPR unless they're not breathing after seizure ends
+              </li>
+            </ul>
+
+            <strong>Call 911 if:</strong>
+            <ul>
+              <li>Seizure lasts more than 5 minutes</li>
+              <li>Person has difficulty breathing afterward</li>
+              <li>Person is injured during the seizure</li>
+              <li>It's their first seizure</li>
+              <li>Another seizure begins soon after the first</li>
+            </ul>
+          </h4>
+        </div>
+      </div>
+
+      <div class="LearnInfoBox fade-in-section">
+        <h1 onclick="toggleBox(this)">
+          Living with Epilepsy <span class="toggle-icon">+</span>
+        </h1>
+        <div class="boxContent">
+          <h4>
+            Managing epilepsy involves more than just medical treatment.
+            Important lifestyle considerations include:
+
+            <ul>
+              <li>
+                <strong>Sleep:</strong> Maintain regular sleep patterns as
+                fatigue can trigger seizures
+              </li>
+              <li>
+                <strong>Stress management:</strong> Practice relaxation
+                techniques like meditation or yoga
+              </li>
+              <li>
+                <strong>Medication adherence:</strong> Take medications exactly
+                as prescribed
+              </li>
+              <li>
+                <strong>Safety precautions:</strong> Avoid swimming alone,
+                climbing ladders, or other high-risk activities
+              </li>
+              <li>
+                <strong>Seizure diary:</strong> Track triggers, frequency, and
+                characteristics of seizures
+              </li>
+              <li>
+                <strong>Support systems:</strong> Connect with epilepsy support
+                groups and communities
+              </li>
+            </ul>
+
+            Many people with epilepsy live full, active lives with proper
+            management. Open communication with employers, teachers, and loved
+            ones is key to creating a safe environment.
+          </h4>
+        </div>
+      </div>
+
+      <div class="LearnInfoBox fade-in-section">
+        <h1 onclick="toggleBox(this)">
+          Epilepsy Myths vs Facts <span class="toggle-icon">+</span>
+        </h1>
+        <div class="boxContent">
+          <h4>
+            <strong>Myth:</strong> You should put something in a seizing
+            person's mouth to prevent swallowing their tongue. <br /><strong
+              >Fact:</strong
+            >
+            This is dangerous and unnecessary. The tongue cannot be swallowed
+            during a seizure.
+
+            <br /><br /><strong>Myth:</strong> Epilepsy is contagious.
+            <br /><strong>Fact:</strong> Epilepsy cannot be "caught" from
+            someone else.
+
+            <br /><br /><strong>Myth:</strong> All seizures involve convulsions.
+            <br /><strong>Fact:</strong> Many seizures involve staring spells or
+            subtle symptoms without convulsions.
+
+            <br /><br /><strong>Myth:</strong> People with epilepsy are mentally
+            ill or intellectually disabled. <br /><strong>Fact:</strong>
+            Epilepsy is a physical neurological condition unrelated to
+            intelligence or mental health.
+
+            <br /><br /><strong>Myth:</strong> Epilepsy is always inherited.
+            <br /><strong>Fact:</strong> While genetics can play a role, most
+            cases have no family history.
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Relaxation Playlist -->
+    <div class="spotify fade-in-section">
+      <h2 class="section-title">Relaxation and Learn Playlist for Epilepsy</h2>
+      <p class="section-subtitle">
+        Stress can be a seizure trigger for some people. This calming playlist
+        may help with relaxation and expand your knowledge on epilepsy and
+        seizures.
+      </p>
+      <iframe
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/playlist/3ZtGgtYXCuZlzSW3YLJowv?utm_source=generator"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- Sources Section -->
+    <div class="sources fade-in-section">
+      <div id="sourcetitle">
+        <h2>Sources & Further Reading</h2>
+      </div>
+      <div id="sourcelist">
+        <div class="source-card">
+          <h3>Medical Organizations</h3>
+          <ul>
+            <li>
+              <a href="https://www.epilepsy.com/" target="_blank"
+                >Epilepsy Foundation</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.who.int/news-room/fact-sheets/detail/epilepsy"
+                target="_blank"
+                >World Health Organization</a
+              >
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/epilepsy/index.html" target="_blank"
+                >CDC Epilepsy Program</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="source-card">
+          <h3>Research & Education</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.mayoclinic.org/diseases-conditions/epilepsy/symptoms-causes/syc-20350093"
+                target="_blank"
+                >Mayo Clinic</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://my.clevelandclinic.org/health/diseases/22789-seizure"
+                target="_blank"
+                >Cleveland Clinic</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.ninds.nih.gov/health-information/disorders/epilepsy-and-seizures"
+                target="_blank"
+                >National Institute of Neurological Disorders</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="source-card">
+          <h3>Support Communities</h3>
+          <ul>
+            <li>
+              <a href="https://www.epilepsy.org.uk/" target="_blank"
+                >Epilepsy Action (UK)</a
+              >
+            </li>
+            <li>
+              <a href="https://www.epilepsysociety.org.uk/" target="_blank"
+                >Epilepsy Society (UK)</a
+              >
+            </li>
+            <li>
+              <a href="https://www.epilepsy.ca/" target="_blank"
+                >Epilepsy Canada</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      // Intersection Observer for scroll animations
+      const fadeInSections = document.querySelectorAll(".fade-in-section");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+        }
+      );
+
+      fadeInSections.forEach((section) => {
+        observer.observe(section);
+      });
+
+      // Enhanced toggle function
+      function toggleBox(header) {
+        const box = header.parentElement;
+        const content = header.nextElementSibling;
+        const icon = header.querySelector(".toggle-icon");
+
+        box.classList.toggle("active");
+
+        if (box.classList.contains("active")) {
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.textContent = "-";
+        } else {
+          content.style.maxHeight = "0";
+          icon.textContent = "+";
+        }
+      }
+
+      // Initialize all boxes to be closed
+      document.addEventListener("DOMContentLoaded", function () {
+        const boxes = document.querySelectorAll(".LearnInfoBox");
+        boxes.forEach((box) => {
+          const content = box.querySelector(".boxContent");
+          content.style.maxHeight = "0";
+        });
+      });
+    </script>
+  </body>
+</html>

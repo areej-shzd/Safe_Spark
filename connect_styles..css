@@ -1,0 +1,249 @@
+#block1 {
+  background-color: #fff9ed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #a4739e;
+  border-radius: 10px;
+  margin: 0px 0px;
+  font-size: 30px;
+  font-family: ;
+}
+
+body {
+  background-color: #fff9ed;
+}
+
+/* Base styles for infoBox */
+.infoBox {
+  margin: 20px auto;
+  max-width: 700px;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+/* Header (clickable) */
+.infoBox h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 16px 20px;
+  background-color: #673ab7; /* purple shade */
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Box content */
+.boxContent {
+  padding: 16px 20px;
+  background-color: white;
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.3s ease;
+  border-top: 1px solid #ddd;
+}
+
+/* Expanded content */
+.infoBox.active .boxContent {
+  display: block;
+  max-height: 500px; /* adjust if needed */
+  padding: 16px 20px;
+}
+
+/* Dropdown select */
+select {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Button styling */
+button {
+  background-color: #673ab7;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5e35b1;
+}
+
+/* Page heading */
+.center h1 {
+  font-size: 2rem;
+  margin-top: 40px;
+  padding-bottom: 0px;
+}
+
+/* Description paragraph */
+.page-description {
+  text-align: center;
+  max-width: 600px;
+  margin: 10px auto 30px;
+  color: #444;
+}
+
+/* Sources Section */
+.sources {
+  background-color: #4f2d61;
+  padding: 60px 20px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+#sourcetitle {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#sourcetitle h2 {
+  font-size: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+#sourcetitle h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #a4739e;
+}
+
+#sourcelist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.source-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 300px;
+  transition: transform 0.3s ease;
+  padding-bottom: ;
+}
+
+.source-card:hover {
+  transform: translateY(-5px);
+}
+
+.source-card h3 {
+  border-bottom: 2px solid #a4739e;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+.source-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.source-card li {
+  margin-bottom: 15px;
+}
+
+.source-card a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.source-card a::before {
+  content: "→";
+  margin-right: 10px;
+  color: #a4739e;
+}
+
+.source-card a:hover {
+  color: #e8dbc1;
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav {
+  background-color: #ba8db5;
+
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h4 {
+  margin: 0;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 115px;
+  margin: 0;
+  padding-right: 30px;
+  margin-left: auto;
+}
+
+.nav-links li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.block a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.block a:hover {
+  text-decoration: underline;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
